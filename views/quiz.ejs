@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz page</title>
+    <%- include("partials/head.ejs") %>
+</head>
+<body>
+    <%- include("partials/nav.ejs") %>
+
+    <h1>Monster Quiz!</h1>
+    <% for(i of rows) {%> 
+        <div>
+            <img src="/img/<%=i.imgName%>">
+            <h2> <%= i.name %></h2>    
+        </div>
+    <% } %>
+    <!-- <div>
+        <img src="img/<%=rows[0].imgName%>">
+
+    </div> -->
+    
+</body>
+</html>

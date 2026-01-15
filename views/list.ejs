@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Monster</title>
+    <%- include("partials/head.ejs") %>
+</head>
+<body>
+    <%- include("partials/nav.ejs") %>
+    <h1> Add New Monster!</h1>
+    <form action="/monsters/list" method="POST">
+        Name: <input type="text" name="name"> <br> <br>
+        Move Set: <input type="text" name="moveSet"> <br> <br> 
+        First Caught (YYYY-MM-DD): <input type="text" name="firstCaught"> <br> <br> 
+        Description: <input type="text" name="description"> <br> <br>
+        Img Name: <input type="text" name="imgName">
+        Score: <input type="text" name="score"> <br> <br>
+        Element:
+        <select name="element">
+            <% for(i of rows) { %>
+                <option value="<%=i.elementId%>"><%=i.elementName%></option>
+            <% } %>
+        </select> <br>
+        <button> Add Monster </button>
+</form>
+
+<!-- <div> -->
+    <% for(i of rows2) { %>
+    <div>
+        <img src="/img/<%=i.imgName%>"> 
+        <h3><%= i.name %></h3> <br>
+        Description: <%= i.description %> <br>
+        Move Set: <%= i.moveSet %> <br>
+        Element: <%= i.elementName %> <br>
+        Date Caught: <%= i.firstCaught %> 
+        <span>Score:</span> <%= i.score %>
+    </div>
+    <% } %>
+<!-- </div> -->
+
+    
+</body>
+</html>

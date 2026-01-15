@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+    /* background-color: lightblue; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(211, 171, 120);
+    /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+a:link {
+    /* font-size: 25px; */
+    text-decoration: none;
+    color: rgb(22, 20, 16);
+}
+a:visited {
+    color: rgb(117, 105, 74);
+}
+
+/* a:hover {
+    color:grey;
+} */
+a, a:hover, button:hover, select:hover {
+    color:rgb(14, 14, 14);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a:active {
+    color: skyblue;
+}
+button {
+    background-color: rgb(192, 192, 120);
+    padding: 0.4em;
+    margin: 0.5em;    
+    border-radius: 10px;
+}
+textarea, input, select {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(188, 183, 175);
+}
+h2{
+    padding: 0.5em;
+    background-color: rgb(127, 168, 202,0.5);
+    margin: 0px 15em;
+    border-radius: 10px;
+}
+div{
+    display: flex;
+    flex: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+}
+img{
+    width: 10%;
+}
+span{
+    color:rgb(16, 29, 112);
+}
